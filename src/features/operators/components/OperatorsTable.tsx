@@ -143,7 +143,7 @@ export const OperatorsTable: React.FC = () => {
         placeholder="Ім’я користувача..."
       />
 
-      <StyledTableContainer component={Paper}>
+      <StyledTableContainer>
         <Table>
           <StyledTableHead>
             <TableRow>
@@ -199,7 +199,7 @@ export const OperatorsTable: React.FC = () => {
                 </StyledTableCell>
 
                 {addonColumns.map((addonCol) => {
-                  const addonForOp = addons.find(
+                  const addonForOp = addons?.find(
                     (a) => a.fieldName === addonCol.fieldName && a.id === op.id
                   );
                   return (
