@@ -1,12 +1,7 @@
-import { useOperatorsData } from "./features/operators/hooks/useOperators";
+import { OperatorsTable } from "./features/operators/components/OperatorsTable";
 
 function App() {
-  const { operators, addons, isLoading, error } = useOperatorsData();
-
-  console.log({ operators, addons, isLoading, error });
-  return (
-    <p>1</p>
-  )
+  return <OperatorsTable />
 }
 
 export default App
